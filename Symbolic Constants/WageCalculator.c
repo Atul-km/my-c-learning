@@ -7,8 +7,8 @@
 int main(){
     int AbsentDays,overtime ,workDays;
     int wage; 
-    printf("Enter your AbsentDays and overtime\n");
-    scanf("%d %d", &AbsentDays,&overtime);
+    printf("Enter your workdays AbsentDays and overtime\n");
+    scanf("%d %d %d", &AbsentDays,&overtime,&workDays);
     if(AbsentDays > 15){
         wage = PerDaySalary*workDays - Absentfine + overtime*OverTimeFactor + MinWage;
         printf("%d", wage);
